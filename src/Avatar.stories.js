@@ -23,6 +23,19 @@ knobs.story = {
   decorators: [withKnobs],
 };
 
+export const knobs2 = () => (
+  <Avatar
+    loading={boolean("Loading")}
+    size={select("Size", ["tiny", "small", "medium", "large"])}
+    username="Dominic Nguyen"
+    src="https://avatars2.githubusercontent.com/u/263385"
+  />
+);
+
+knobs.story2 = {
+  decorators: [withKnobs],
+};
+
 export const standard = () => (
   <Avatar
     size="large"
